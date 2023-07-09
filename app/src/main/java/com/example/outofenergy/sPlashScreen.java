@@ -16,8 +16,9 @@ public class sPlashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(sPlashScreen.this,MainActivity.class);
+                Intent intent = new Intent(sPlashScreen.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         },300);
     }

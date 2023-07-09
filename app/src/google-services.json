@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "468162081595",
+    "project_id": "outofenergydb",
+    "storage_bucket": "outofenergydb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468162081595:android:1b7b126d00b8552fa4fd1e",
+        "android_client_info": {
+          "package_name": "com.example.outofenergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468162081595-ojg892kcc93qmfjhji0a8mv32h1dds4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.outofenergy",
+            "certificate_hash": "62bbc0b7af4304bada9237dcc49aea77718c8e65"
+          }
+        },
+        {
+          "client_id": "468162081595-pvd7dmd9o7vosatogtaapif1v7ve4spc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLj4SaCqNYwQ0izix2sN2eW8gk2Pqc3tM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468162081595-pvd7dmd9o7vosatogtaapif1v7ve4spc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

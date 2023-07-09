@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".menu">
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_bank_layout"
+        android:layout_width="394dp"
+        android:layout_height="695dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43">
+
+        <Button
+            android:id="@+id/bank_bonus_button"
+            android:layout_width="358dp"
+            android:layout_height="43dp"
+            android:onClick="bank_multibtn_bonus"
+            android:text="Потратить бонусы"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.92" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="371dp"
+            android:layout_height="518dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.457">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView_battery"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:onClick="bonus18650"
+                            app:srcCompat="@drawable/bonus1850" />
+
+                        <ImageView
+                            android:id="@+id/bank_cashback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_cashback"
+                            app:srcCompat="@drawable/cashback" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/bank_50coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_coupon50"
+                            app:srcCompat="@drawable/coupon50" />
+
+                        <ImageView
+                            android:id="@+id/bank_credit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_credit"
+                            app:srcCompat="@drawable/creditpoint" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/bank_save_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_saver"
+                            app:srcCompat="@drawable/economist" />
+
+                        <ImageView
+                            android:id="@+id/bank_fine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_fine"
+                            app:srcCompat="@drawable/finefree" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/bank_phone_charge_boost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_phone_charge"
+                            app:srcCompat="@drawable/phonechargerboost" />
+
+                        <ImageView
+                            android:id="@+id/bank_rouble_boost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="bonus_ruble_add"
+                            app:srcCompat="@drawable/roublebonus" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bank_one_gadget_ch_boost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="bonus_gadget"
+                        app:srcCompat="@drawable/onegadgetcharge" />
+
+                    <ImageView
+                        android:id="@+id/bank_star_boost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="bonus_starPoint"
+                        app:srcCompat="@drawable/staroiints" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/bank_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выбранное"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.057" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_tasks_layout"
+        android:layout_width="394dp"
+        android:layout_height="685dp"
+        android:background="@drawable/menu_layout_circular"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39">
+
+        <TextView
+            android:id="@+id/menu_main_header_task_aact_text"
+            android:layout_width="131dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Выбранный"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.039" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/menu_task_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="90dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/completed_task_list"
+            android:layout_width="107dp"
+            android:layout_height="55dp"
+            android:onClick="completed_task_list"
+            android:text="Completed"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93" />
+
+        <Button
+            android:id="@+id/all_tasks_btn_click"
+            android:layout_width="107dp"
+            android:layout_height="55dp"
+            android:onClick="all_task_filter"
+            android:text="Вcе задачи"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93" />
+
+        <Button
+            android:id="@+id/menu_all_active_tasks"
+            android:layout_width="107dp"
+            android:layout_height="55dp"
+            android:onClick="all_active_tasks"
+            android:text="Активные задачи"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93" />
+
+        <LinearLayout
+            android:id="@+id/menu_admin_add_layout"
+            android:layout_width="339dp"
+            android:layout_height="460dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/menu_admin_ed_nazvanie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Название задачи"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/menu_admin_ed_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Описание и инсрукция"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/menu_admin_ed_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Время на выполнение(необязательно)"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/menu_admin_ed_reward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Награда за выполнение"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/menu_admin_imageView"
+                android:layout_width="235dp"
+                android:layout_height="142dp"
+                android:layout_marginStart="80dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AddImg"
+                android:text="Выбор картинки"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/menu_admin_saveall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="menu_admin_save"
+                android:text="Сохранить все"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/menu_task_cat_spinner"
+            android:layout_width="357dp"
+            android:layout_height="34dp"
+            android:entries="@array/task_entries"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07999998" />
+
+        <Button
+            android:id="@+id/menu_admin_add_task"
+            android:layout_width="332dp"
+            android:layout_height="37dp"
+            android:onClick="add_task"
+            android:text="ADD"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <TextView
+            android:id="@+id/menu_task_full_instruction"
+            android:layout_width="329dp"
+            android:layout_height="201dp"
+            android:gravity="start"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <TextView
+            android:id="@+id/menu_task_full_time"
+            android:layout_width="157dp"
+            android:layout_height="32dp"
+            android:gravity="center|start"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.713"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <TextView
+            android:id="@+id/menu_task_full_reward"
+            android:layout_width="157dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="188dp"
+            android:gravity="center|start"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.713"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.284" />
+
+        <TextView
+            android:id="@+id/menu_task_full_nazvanie"
+            android:layout_width="216dp"
+            android:layout_height="32dp"
+            android:gravity="center|start"
+            android:text="eeeeeeeee"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.163" />
+
+        <ImageView
+            android:id="@+id/menu_task_full_image"
+            android:layout_width="128dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="104dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.176"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <Button
+            android:id="@+id/menu_start_task_user"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:onClick="menu_task_add_to_active_dialog_start"
+            android:text="Приступить"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
+
+        <Button
+            android:id="@+id/menu_end_task"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:onClick="menu_task_add_to_active_dialog_start_to_end_of_quest"
+            android:text="Выполнено"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
+
+        <Button
+            android:id="@+id/menu_list_user_task"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:onClick="list_of_task"
+            android:text="Список"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
+
+        <Button
+            android:id="@+id/menu_list_task_end"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:onClick="list_of_task"
+            android:text="Список активыных"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_activity_layout"
+        android:layout_width="392dp"
+        android:layout_height="601dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_gadgets_layout"
+        android:layout_width="392dp"
+        android:layout_height="601dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.43">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_shop_layout"
+        android:layout_width="398dp"
+        android:layout_height="680dp"
+        android:background="@drawable/menu_layout_circular"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001">
+
+        <LinearLayout
+            android:id="@+id/menu_botton_nav_bar"
+            android:layout_width="324dp"
+            android:layout_height="63dp"
+
+            android:background="@drawable/menu_downbar_circular"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.995">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menu_downbar_circular"
+
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.992">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/main_custom_edit_text_auth"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/menu_shop" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/gadgets" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewewe"
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/activities" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageVieweweee"
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/tasks" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewxee"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+
+                    android:background="@drawable/main_custom_edit_text_auth"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/spending" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="38dp"
+            android:background="@drawable/menu_topbar_circular"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002">
+
+            <TextView
+                android:id="@+id/menu_balance_view"
+                android:layout_width="104dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/tether"
+                android:gravity="center|start"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu_energy_view"
+                android:layout_width="201dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/menu_mah"
+                android:gravity="center|start"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <![CDATA[
+
+
+
+    android:id="@+id/imageView6"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logout" />
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
